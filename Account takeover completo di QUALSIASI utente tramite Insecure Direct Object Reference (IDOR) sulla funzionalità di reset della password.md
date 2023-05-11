@@ -10,7 +10,7 @@ Nel mio caso, mi avrebbe permesso di reimpostare la password letteralmente di qu
 ### Descrizione
 Dopo aver creato l'account utente e navigato tra le funzionalità autenticate dell'applicazione web su `<redacted.com>`, mi sono concentrato in particolare sul modulo di reimpostazione della password, poiché è una funzione notoriamente abusata per ovvie ragioni. Dopo aver interagito con il modulo richiedendo il link di conferma per reimpostare la mia password via e-mail, ho notato che agli utenti registrati venivano assegnati identificativi numerici di tipo incrementale. Questo era evidente dalla URL ricevuta, che era qualcosa del tipo `https://<redacted.com>/reset-password/0-57-axq24ncy32bh1hc8nrp78xyz`, in cui era possibile notare l'identificativo numerico `57` tra `0-` e il token. Per confermare questa evidenza, ho creato un secondo account che avrei usato come utente vittima, e ripetendo la stessa procedura di reimpostazione della password ho ottenuto un link simile a questo: `https://<redacted.com>/reset-password/0-58-bce64t3ane46tt9nr6ce2kk33`. Inevitabilmente, quel `58` ha attirato tutta la mia attenzione.
 
-![](https://i.gifer.com/Bd0t.gif)
+![](https://media.tenor.com/PVlkN3u4KNsAAAAC/varg-smiling.gif)
 
 Quindi, sono andato a recuperare la richiesta POST di reimpostazione della password inviata in precedenza per il primo utente con `id=57`, dalla cronologia del proxy del mio BurpSuite Professional che intanto stava ascoltando passivamente. Ho scoperto che lo stesso ID veniva passato come parametro nel corpo della richiesta POST.
 
