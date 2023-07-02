@@ -96,8 +96,8 @@ Grazie come sempre al team di HACKRATE per avermi dato l'opportunità di parteci
 
 Per ora è tutto.
 
+*indevi0us*
+
 ### Autore
 [![Linkedin Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/samuele-gugliotta/)
 [![Website Badge](https://img.shields.io/badge/website-000000?style=for-the-badge&logo=About.me&logoColor=white)](https://indevi0us.github.io)
-
-*indevi0us*
